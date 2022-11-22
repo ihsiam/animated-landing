@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #000000;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav h3{
+    letter-spacing: 3px;
+    color: white;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s all linear;
+}
+
+.nav ul li:last-child a{
+    color: #000000;
+}
+
+ul li:last-child{
+    background-color: #ffffff;
+    padding: 3px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    animation: nv 3s linear backwards;
+    animation-delay: 0.3s;
+}
+
+ul li a:hover{
+    letter-spacing: 2px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #000000;
+    color: white;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+}
+
+.container .content{
+    padding-left: 40px;
+}
+
+h1{
+    font-size: 50px;
+    animation: an 3s linear backwards;
+    animation-delay: 0.3s;
+}
+
+p{
+    margin: 10px 0;
+    line-height: 20px;
+    letter-spacing: 2px;
+    animation: an 3s linear backwards;
+    animation-delay: .9s;
+}
+
+button{
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    animation: an 3s linear backwards;
+    animation-delay: 1.5s;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+@keyframes an{
+    0%{
+        transform: translateX(-150px) scale(0) rotate(0);
+        transform-origin: left;
+    }
+
+    10%{
+        transform: translateX(0px) scale(1) rotate(0);
+        transform-origin: left;
+    }
+}
+
+@keyframes nv{
+    0%{
+        transform: translateY(-50px) scale(0) rotate(45deg);
+        transform-origin: left;
+    }
+
+    10%{
+        transform: translateY(0px) scale(1) rotate(0);
+        transform-origin: left;
+    }
+}
