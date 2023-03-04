@@ -35,7 +35,7 @@ ul li:last-child{
     padding: 3px 10px;
     border: 2px solid;
     border-radius: 10px;
-    animation: nv 3s linear backwards;
+    animation: nv 1s linear backwards;
     animation-delay: 0.3s;
 }
 
@@ -65,7 +65,7 @@ img{
 
 h1{
     font-size: 50px;
-    animation: an 3s linear backwards;
+    animation: an 1s linear backwards;
     animation-delay: 0.3s;
 }
 
@@ -73,7 +73,7 @@ p{
     margin: 10px 0;
     line-height: 20px;
     letter-spacing: 2px;
-    animation: an 3s linear backwards;
+    animation: an 1s linear backwards;
     animation-delay: .9s;
 }
 
@@ -86,7 +86,7 @@ p{
     letter-spacing: 2px;
     border-radius: 10px;
     padding: 10px 20px;
-    animation: an 3s linear backwards;
+    animation: an 1s linear backwards;
     animation-delay: 1.5s;
 }
 
@@ -100,7 +100,7 @@ p{
         transform-origin: left;
     }
 
-    10%{
+    100%{
         transform: translateX(0px) scale(1) rotate(0);
         transform-origin: left;
     }
@@ -112,7 +112,7 @@ p{
         transform-origin: left;
     }
 
-    10%{
+    100%{
         transform: translateY(0px) scale(1) rotate(0);
         transform-origin: left;
     }
